@@ -9,7 +9,7 @@
 
 <br />
 
-### On-device AI for every platform
+### On-device Inference for every platform
 
 Official downloads for the Asearis applications.
 
@@ -28,7 +28,6 @@ Asearis is a **distributed inference platform**. The app puts the spare **comput
 - 🔒 **Private by design** — Asearis taps your device's spare capacity, never your personal files or data.
 - ⚡ **Stays out of your way** — it runs quietly in the background and hands resources straight back the moment you need your device.
 - 🪶 **Lightweight** — engineered for minimal impact on performance and battery life.
-- 🎛️ **Yours to control** — pause or remove it anytime.
 - 🌍 **Everywhere** — one platform across macOS, Windows, iOS, and Android.
 
 <br />
