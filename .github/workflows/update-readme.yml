@@ -1,0 +1,55 @@
+name: Update download README
+
+# Regenerates README.md so the macOS/Windows download links always point at the
+# latest release per platform. Fires whenever a release is created or changed, and
+# can be run manually. Pushing README.md does not emit a `release` event, so this
+# workflow never re-triggers itself.
+on:
+  release:
+    # `edited` covers a stable release being demoted to prerelease; prereleases
+    # themselves are excluded by the generator, so no `prereleased` trigger is needed.
+    types: [published, edited, released, unpublished, deleted]
+  workflow_dispatch:
+
+# Only the default token, scoped to commit the regenerated README back to the repo.
+permissions:
+  contents: write
+
+# Never run two regenerations at once; let an in-flight run finish first.
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout default branch
+        # A `release` event checks out the tag (detached HEAD) by default, which makes the
+        # later `git push` fail. Pin to the default branch so the commit lands on it.
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate README from latest releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 scripts/generate_readme.py
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README.md already up to date — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: refresh download links for latest releases [skip ci]"
+          git push origin HEAD:${{ github.event.repository.default_branch }}
