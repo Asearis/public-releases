@@ -9,7 +9,7 @@
 
 <br />
 
-### On-device AI for every platform
+### On-device Inference for every platform
 
 Official downloads for the Asearis applications.
 
@@ -28,7 +28,6 @@ Asearis is a **distributed inference platform**. The app puts the spare **comput
 - 🔒 **Private by design** — Asearis taps your device's spare capacity, never your personal files or data.
 - ⚡ **Stays out of your way** — it runs quietly in the background and hands resources straight back the moment you need your device.
 - 🪶 **Lightweight** — engineered for minimal impact on performance and battery life.
-- 🎛️ **Yours to control** — pause or remove it anytime.
 - 🌍 **Everywhere** — one platform across macOS, Windows, iOS, and Android.
 
 <br />
@@ -43,7 +42,7 @@ Asearis is a **distributed inference platform**. The app puts the spare **comput
   <tr>
     <td>&nbsp;&nbsp;<b>macOS</b></td>
     <td>
-      <a href="https://github.com/Asearis/public-releases/releases/download/v1.0.19/Asearis.pkg">
+      <a href="{{MACOS_URL}}">
         <img src="https://img.shields.io/badge/Download%20.pkg-1B1B1F?style=for-the-badge&logo=apple&logoColor=03C4FB" alt="Download Asearis for macOS" />
       </a>
     </td>
@@ -51,8 +50,8 @@ Asearis is a **distributed inference platform**. The app puts the spare **comput
   <tr>
     <td>&nbsp;&nbsp;<b>Windows</b></td>
     <td>
-      <a href="https://github.com/Asearis/public-releases/releases/download/1.3.10/AsearisSetup-Release.exe">
-        <img src="https://img.shields.io/badge/Download%20.exe-1B1B1F?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAzQzRGQiI%2BPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPHJlY3QgeD0iMTMuNSIgeT0iMSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPHJlY3QgeD0iMSIgeT0iMTMuNSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPHJlY3QgeD0iMTMuNSIgeT0iMTMuNSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPC9zdmc%2B" alt="Download Asearis for Windows" />
+      <a href="{{WINDOWS_URL}}">
+        <img src="https://img.shields.io/badge/Download%20.exe-1B1B1F?style=for-the-badge&logo={{WIN_LOGO}}" alt="Download Asearis for Windows" />
       </a>
     </td>
   </tr>
@@ -98,6 +97,6 @@ To help us resolve issues quickly, please include:
 
 <br />
 
-<sub>© 2026 Asearis™ · Download links last updated automatically on <b>Jun 22, 2026</b></sub>
+<sub>© 2026 Asearis™ · Download links last updated automatically on <b>{{UPDATED}}</b></sub>
 
 </div>
