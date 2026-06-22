@@ -22,12 +22,10 @@ concurrency:
 
 jobs:
   update-readme:
-    # Runs on your self-hosted macOS runner (runner labels: self-hosted + macOS).
-    # Safe on a PUBLIC repo: this workflow triggers only on `release` / `workflow_dispatch`
-    # (both require write access) and never on `pull_request` / `push`, so untrusted fork
-    # code can't execute on the runner. The guard below makes the job a no-op on forks.
-    if: github.repository == 'Asearis/public-releases'
-    runs-on: [self-hosted, macOS]
+    # GitHub-hosted runner: free with unlimited minutes on public repos, fully ephemeral
+    # and isolated (none of the self-hosted exposure). ubuntu-latest ships Python 3, which
+    # is all this stdlib-only script needs.
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout default branch
         # A `release` event checks out the tag (detached HEAD) by default, which makes the
@@ -37,7 +35,7 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Generate README from latest releases
-        # The self-hosted macOS runner provides Python 3 (stdlib-only script, no pip needed).
+        # ubuntu-latest ships Python 3 (stdlib-only script, no pip install needed).
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
