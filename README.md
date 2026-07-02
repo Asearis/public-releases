@@ -42,7 +42,7 @@ Asearis is a **distributed inference platform**. The app puts the spare **comput
   <tr>
     <td>&nbsp;&nbsp;<b>macOS</b></td>
     <td>
-      <a href="https://github.com/Asearis/public-releases/releases/download/v1.0.20-b151/Asearis.pkg">
+      <a href="https://github.com/Asearis/public-releases/releases/download/v1.0.19/Asearis.pkg">
         <img src="https://img.shields.io/badge/Download%20.pkg-1B1B1F?style=for-the-badge&logo=apple&logoColor=03C4FB" alt="Download Asearis for macOS" />
       </a>
     </td>
