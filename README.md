@@ -50,7 +50,7 @@ Asearis is a **distributed inference platform**. The app puts the spare **comput
   <tr>
     <td>&nbsp;&nbsp;<b>Windows</b></td>
     <td>
-      <a href="https://github.com/Asearis/public-releases/releases/download/1.3.11/AsearisSetup-Release.exe">
+      <a href="https://github.com/Asearis/public-releases/releases/download/1.3.12/AsearisSetup-Release.exe">
         <img src="https://img.shields.io/badge/Download%20.exe-1B1B1F?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAzQzRGQiI%2BPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPHJlY3QgeD0iMTMuNSIgeT0iMSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPHJlY3QgeD0iMSIgeT0iMTMuNSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPHJlY3QgeD0iMTMuNSIgeT0iMTMuNSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiIHJ4PSIxIi8%2BPC9zdmc%2B" alt="Download Asearis for Windows" />
       </a>
     </td>
@@ -97,6 +97,6 @@ To help us resolve issues quickly, please include:
 
 <br />
 
-<sub>© 2026 Asearis™ · Download links last updated automatically on <b>Aug 22, 2026</b></sub>
+<sub>© 2026 Asearis™ · Download links last updated automatically on <b>Aug 31, 2026</b></sub>
 
 </div>
